@@ -27,6 +27,9 @@ class Lesson: NSObject {
     var name: String
     var descr: String
     var video:String
+    var videoURL:URL? {
+        return URL(string: "https://youtube.com/embed/"+video)
+    }
     
     init(dictionary:NSDictionary) {
         self.id = dictionary.object(forKey: "id") as! Int

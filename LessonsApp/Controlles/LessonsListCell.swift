@@ -17,7 +17,7 @@ class LessonsListCell: UITableViewCell {
     @IBOutlet weak var labelPart: UILabel!
     
     func initCell(lesson:Lesson){
-        labelName.text = lesson.name
+        labelName.text = lesson.descr
         labelPart.text = "Урок " + String(lesson.id)
         imageLesson.image = UIImage(named: "swift.png")
     }
@@ -28,8 +28,6 @@ class LessonsListCell: UITableViewCell {
     
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-        
-        // Configure the view for the selected state
     }
     
 }

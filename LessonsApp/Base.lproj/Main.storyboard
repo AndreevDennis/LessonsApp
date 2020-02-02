@@ -26,8 +26,8 @@
         <!--Урок 1-->
         <scene sceneID="a4M-hi-nEK">
             <objects>
-                <tableViewController id="q19-lx-si3" customClass="LessonController" customModule="LessonsApp" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="YD3-jD-OvW">
+                <tableViewController wantsFullScreenLayout="YES" interfaceStyle="light" id="q19-lx-si3" customClass="LessonController" customModule="LessonsApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" contentViewInsetsToSafeArea="NO" id="YD3-jD-OvW">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -58,11 +58,20 @@
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="189"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ndO-qG-jc5">
-                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="178"/>
+                                                <wkWebView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Qni-d2-lrv">
+                                                    <rect key="frame" x="0.0" y="11" width="414" height="167"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                </webView>
+                                                    <wkWebViewConfiguration key="configuration">
+                                                        <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                                        <wkPreferences key="preferences"/>
+                                                    </wkWebViewConfiguration>
+                                                </wkWebView>
+                                                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" hidesWhenStopped="YES" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="G4o-it-mVc">
+                                                    <rect key="frame" x="189" y="76.5" width="37" height="37"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="color" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                </activityIndicatorView>
                                             </subviews>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -77,11 +86,17 @@
                                                     <rect key="frame" x="67" y="7" width="30" height="30"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <state key="normal" title="Like"/>
+                                                    <connections>
+                                                        <action selector="buttonLikeAction:" destination="q19-lx-si3" eventType="touchUpInside" id="vln-jW-KR5"/>
+                                                    </connections>
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7ru-Be-93P">
                                                     <rect key="frame" x="285" y="7" width="45" height="30"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <state key="normal" title="Dislike"/>
+                                                    <connections>
+                                                        <action selector="buttonDislikeAction:" destination="q19-lx-si3" eventType="touchUpInside" id="CQ2-yX-nNk"/>
+                                                    </connections>
                                                 </button>
                                             </subviews>
                                         </tableViewCellContentView>
@@ -97,6 +112,9 @@
                                                     <rect key="frame" x="123" y="11" width="169" height="30"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <state key="normal" title="Отправить email автору"/>
+                                                    <connections>
+                                                        <action selector="sendAuthorButtonAction:" destination="q19-lx-si3" eventType="touchUpInside" id="x7C-NI-Ucs"/>
+                                                    </connections>
                                                 </button>
                                             </subviews>
                                         </tableViewCellContentView>
@@ -110,6 +128,27 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Урок 1" id="phh-sf-0yF"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="414" height="896"/>
+                    <refreshControl key="refreshControl" opaque="NO" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" id="rx3-CN-FHp">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <attributedString key="attributedTitle">
+                            <fragment content="Hello">
+                                <attributes>
+                                    <font key="NSFont" metaFont="toolTip"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                    </refreshControl>
+                    <connections>
+                        <outlet property="activityIndicator" destination="G4o-it-mVc" id="Ijf-oi-l78"/>
+                        <outlet property="buttonDislike" destination="7ru-Be-93P" id="qvE-kS-b0H"/>
+                        <outlet property="buttonLike" destination="tk4-Dk-cS5" id="YUK-di-Gud"/>
+                        <outlet property="labelName" destination="ekk-hO-rrX" id="Btj-nj-FrX"/>
+                        <outlet property="webKit" destination="Qni-d2-lrv" id="X0W-iJ-KhM"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vXq-bp-8QD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -192,6 +231,7 @@
                                     <outlet property="imageLesson" destination="gND-Ut-gBK" id="moT-v1-BmM"/>
                                     <outlet property="labelName" destination="5Rl-hx-ywm" id="i87-tG-Geu"/>
                                     <outlet property="labelPart" destination="eZ0-x9-0o8" id="2Im-Vf-3De"/>
+                                    <segue destination="q19-lx-si3" kind="show" identifier="goToLesson" animates="NO" id="q7h-gp-b1O"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -201,9 +241,6 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Уроки" id="veT-ND-RHV"/>
-                    <connections>
-                        <segue destination="q19-lx-si3" kind="show" id="H9u-V5-pdQ"/>
-                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sM8-He-Dds" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
