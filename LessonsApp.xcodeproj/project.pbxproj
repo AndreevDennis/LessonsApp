@@ -16,6 +16,8 @@
 		C2555B3223E7272E00AEE1DE /* Lesson.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2555B3123E7272E00AEE1DE /* Lesson.swift */; };
 		C2555B3423E72DBE00AEE1DE /* LessonController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2555B3323E72DBE00AEE1DE /* LessonController.swift */; };
 		C2555B3623E72DF600AEE1DE /* LessonsListControllers.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2555B3523E72DF600AEE1DE /* LessonsListControllers.swift */; };
+		C2555B3823E72EF100AEE1DE /* LessonsListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2555B3723E72EF100AEE1DE /* LessonsListCell.swift */; };
+		C2555B3A23E7301E00AEE1DE /* swift.png in Resources */ = {isa = PBXBuildFile; fileRef = C2555B3923E7301E00AEE1DE /* swift.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		C2555B3123E7272E00AEE1DE /* Lesson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lesson.swift; sourceTree = "<group>"; };
 		C2555B3323E72DBE00AEE1DE /* LessonController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessonController.swift; sourceTree = "<group>"; };
 		C2555B3523E72DF600AEE1DE /* LessonsListControllers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessonsListControllers.swift; sourceTree = "<group>"; };
+		C2555B3723E72EF100AEE1DE /* LessonsListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessonsListCell.swift; sourceTree = "<group>"; };
+		C2555B3923E7301E00AEE1DE /* swift.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = swift.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,10 +70,10 @@
 				C2555B1923E7217500AEE1DE /* SceneDelegate.swift */,
 				C2555B1D23E7217500AEE1DE /* Main.storyboard */,
 				C2555B2223E7217700AEE1DE /* LaunchScreen.storyboard */,
+				C2555B2B23E722C200AEE1DE /* Model */,
 				C2555B2C23E722C900AEE1DE /* Controlles */,
 				C2555B2E23E722DF00AEE1DE /* Assets */,
 				C2555B2D23E722D900AEE1DE /* Managers */,
-				C2555B2B23E722C200AEE1DE /* Model */,
 				C2555B2523E7217700AEE1DE /* Info.plist */,
 			);
 			path = LessonsApp;
@@ -88,6 +92,7 @@
 			isa = PBXGroup;
 			children = (
 				C2555B3323E72DBE00AEE1DE /* LessonController.swift */,
+				C2555B3723E72EF100AEE1DE /* LessonsListCell.swift */,
 				C2555B3523E72DF600AEE1DE /* LessonsListControllers.swift */,
 			);
 			path = Controlles;
@@ -103,6 +108,7 @@
 		C2555B2E23E722DF00AEE1DE /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				C2555B3923E7301E00AEE1DE /* swift.png */,
 				C2555B2023E7217700AEE1DE /* Assets.xcassets */,
 			);
 			path = Assets;
@@ -168,6 +174,7 @@
 			files = (
 				C2555B2423E7217700AEE1DE /* LaunchScreen.storyboard in Resources */,
 				C2555B3023E7241800AEE1DE /* Model.plist in Resources */,
+				C2555B3A23E7301E00AEE1DE /* swift.png in Resources */,
 				C2555B2123E7217700AEE1DE /* Assets.xcassets in Resources */,
 				C2555B1F23E7217500AEE1DE /* Main.storyboard in Resources */,
 			);
@@ -185,6 +192,7 @@
 				C2555B3423E72DBE00AEE1DE /* LessonController.swift in Sources */,
 				C2555B1823E7217500AEE1DE /* AppDelegate.swift in Sources */,
 				C2555B1A23E7217500AEE1DE /* SceneDelegate.swift in Sources */,
+				C2555B3823E72EF100AEE1DE /* LessonsListCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
