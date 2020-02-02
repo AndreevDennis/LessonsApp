@@ -12,10 +12,10 @@ import WebKit
 class LessonController: UITableViewController {
     
     var lesson:Lesson?
+    var shareManager = ShareManager()
     
 
     @IBOutlet weak var webKit: WKWebView!
-    @IBOutlet weak var buttonDislike: UIButton!
     @IBOutlet weak var buttonLike: UIButton!
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
    
@@ -23,11 +23,23 @@ class LessonController: UITableViewController {
     
     
     @IBAction func buttonLikeAction(_ sender: UIButton) {
-    }
-    @IBAction func sendAuthorButtonAction(_ sender: UIButton) {
+        lesson!.like = !lesson!.like
+        setButtonLike()
     }
     
-    @IBAction func buttonDislikeAction(_ sender: UIButton) {
+    @IBAction func sendAuthorButtonAction(_ sender: UIButton) {
+        shareManager.sendMail(recipeints: ["denisandreev1611@gmail.com"], subject: lesson!.description, text: "Hello, my friend", vc: self)
+    }
+    
+    
+    func setButtonLike(){
+        if lesson == lesson {
+            if lesson!.like {
+                buttonLike.tintColor = .red
+            } else {
+                buttonLike.tintColor = .lightGray
+            }
+        }
     }
     
     
@@ -36,26 +48,9 @@ class LessonController: UITableViewController {
         navigationItem.title = lesson?.name
         webKit.load(URLRequest(url: URL(string: "https://www.google.com.ua/?hl=ru")!))
 //        webKit.load(URLRequest(url: (lesson?.videoURL)!))
+        setButtonLike()
     }
     
-    
-//    override func numberOfSections(in tableView: UITableView) -> Int {
-//        return 1
-//    }
-    
-//    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-//        return 0
-//    }
-    
-    /*
-     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-     let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
-     
-     // Configure the cell...
-     
-     return cell
-     }
-     */
 }
 
 

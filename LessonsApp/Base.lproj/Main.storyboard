@@ -82,38 +82,21 @@
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tk4-Dk-cS5">
-                                                    <rect key="frame" x="67" y="7" width="30" height="30"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <state key="normal" title="Like"/>
-                                                    <connections>
-                                                        <action selector="buttonLikeAction:" destination="q19-lx-si3" eventType="touchUpInside" id="vln-jW-KR5"/>
-                                                    </connections>
-                                                </button>
-                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7ru-Be-93P">
-                                                    <rect key="frame" x="285" y="7" width="45" height="30"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <state key="normal" title="Dislike"/>
-                                                    <connections>
-                                                        <action selector="buttonDislikeAction:" destination="q19-lx-si3" eventType="touchUpInside" id="CQ2-yX-nNk"/>
-                                                    </connections>
-                                                </button>
-                                            </subviews>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="0pz-Od-zYn">
-                                        <rect key="frame" x="0.0" y="304" width="414" height="43.5"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="0pz-Od-zYn" id="DMQ-h2-sxN">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
                                                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Eb-9Z-GH4">
-                                                    <rect key="frame" x="123" y="11" width="169" height="30"/>
+                                                    <rect key="frame" x="196" y="7" width="169" height="30"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <state key="normal" title="Отправить email автору"/>
                                                     <connections>
                                                         <action selector="sendAuthorButtonAction:" destination="q19-lx-si3" eventType="touchUpInside" id="x7C-NI-Ucs"/>
+                                                    </connections>
+                                                </button>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tk4-Dk-cS5">
+                                                    <rect key="frame" x="48" y="-1" width="44" height="44"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="tintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <state key="normal" image="hand.thumbsup.fill" catalog="system"/>
+                                                    <connections>
+                                                        <action selector="buttonLikeAction:" destination="q19-lx-si3" eventType="touchUpInside" id="vln-jW-KR5"/>
                                                     </connections>
                                                 </button>
                                             </subviews>
@@ -144,7 +127,6 @@
                     </refreshControl>
                     <connections>
                         <outlet property="activityIndicator" destination="G4o-it-mVc" id="Ijf-oi-l78"/>
-                        <outlet property="buttonDislike" destination="7ru-Be-93P" id="qvE-kS-b0H"/>
                         <outlet property="buttonLike" destination="tk4-Dk-cS5" id="YUK-di-Gud"/>
                         <outlet property="labelName" destination="ekk-hO-rrX" id="Btj-nj-FrX"/>
                         <outlet property="webKit" destination="Qni-d2-lrv" id="X0W-iJ-KhM"/>
@@ -266,4 +248,7 @@
             <point key="canvasLocation" x="108.69565217391305" y="101.78571428571428"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="hand.thumbsup.fill" catalog="system" width="64" height="62"/>
+    </resources>
 </document>

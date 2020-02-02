@@ -30,6 +30,15 @@ class Lesson: NSObject {
     var videoURL:URL? {
         return URL(string: "https://youtube.com/embed/"+video)
     }
+    var like:Bool {
+        set{
+            UserDefaults.standard.set(newValue, forKey: String(id))
+            UserDefaults.standard.synchronize()
+        }
+        get {
+            return UserDefaults.standard.bool(forKey: String(id))
+        }
+    }
     
     init(dictionary:NSDictionary) {
         self.id = dictionary.object(forKey: "id") as! Int
