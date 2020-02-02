@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Je3-BN-Rwy">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="o7q-rF-6SM">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
@@ -136,7 +136,7 @@
                         <attributedString key="attributedTitle">
                             <fragment content="Hello">
                                 <attributes>
-                                    <font key="NSFont" metaFont="toolTip"/>
+                                    <font key="NSFont" metaFont="menu" size="11"/>
                                     <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                 </attributes>
                             </fragment>
@@ -153,24 +153,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vXq-bp-8QD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2089.8550724637685" y="-546.42857142857144"/>
-        </scene>
-        <!--Tab Bar Controller-->
-        <scene sceneID="J67-Sp-A4C">
-            <objects>
-                <tabBarController id="Je3-BN-Rwy" sceneMemberID="viewController">
-                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Oyl-Dl-pCS">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    </tabBar>
-                    <connections>
-                        <segue destination="8Tg-RP-Yax" kind="relationship" relationship="viewControllers" id="U7a-i6-k5b"/>
-                        <segue destination="Hz8-cf-FjH" kind="relationship" relationship="viewControllers" id="fZk-gR-OrQ"/>
-                    </connections>
-                </tabBarController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="zpE-93-HY6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-815" y="-222"/>
         </scene>
         <!--Уроки-->
         <scene sceneID="WGW-wi-5Ba">
@@ -231,7 +213,7 @@
                                     <outlet property="imageLesson" destination="gND-Ut-gBK" id="moT-v1-BmM"/>
                                     <outlet property="labelName" destination="5Rl-hx-ywm" id="i87-tG-Geu"/>
                                     <outlet property="labelPart" destination="eZ0-x9-0o8" id="2Im-Vf-3De"/>
-                                    <segue destination="q19-lx-si3" kind="show" identifier="goToLesson" animates="NO" id="q7h-gp-b1O"/>
+                                    <segue destination="q19-lx-si3" kind="show" identifier="goToLesson" trigger="accessoryAction" id="cBP-1c-XF8"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -245,6 +227,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sM8-He-Dds" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1057.9710144927537" y="-544.41964285714278"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="aWi-1O-Nif">
+            <objects>
+                <tabBarController id="o7q-rF-6SM" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="tFP-rh-BbG">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="8Tg-RP-Yax" kind="relationship" relationship="viewControllers" id="0UN-s2-sjZ"/>
+                        <segue destination="Hz8-cf-FjH" kind="relationship" relationship="viewControllers" id="wii-WP-BoE"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="W3r-jL-RZi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1518" y="-279"/>
         </scene>
         <!--О приложении-->
         <scene sceneID="hAk-DV-SBr">
