@@ -10,7 +10,7 @@
 		<key>name</key>
 		<string>Часть 1</string>
 		<key>id</key>
-		<string>1</string>
+		<integer>1</integer>
 	</dict>
 	<dict>
 		<key>url</key>
@@ -20,7 +20,7 @@
 		<key>name</key>
 		<string>Часть 2</string>
 		<key>id</key>
-		<string>2</string>
+		<integer>2</integer>
 	</dict>
 	<dict>
 		<key>url</key>
@@ -30,7 +30,7 @@
 		<key>name</key>
 		<string>Часть 3</string>
 		<key>id</key>
-		<string>3</string>
+		<integer>3</integer>
 	</dict>
 	<dict>
 		<key>url</key>
@@ -40,7 +40,7 @@
 		<key>name</key>
 		<string>Часть 4</string>
 		<key>id</key>
-		<string>4</string>
+		<integer>4</integer>
 	</dict>
 	<dict>
 		<key>url</key>
@@ -50,7 +50,7 @@
 		<key>name</key>
 		<string>Часть 5</string>
 		<key>id</key>
-		<string>5</string>
+		<integer>5</integer>
 	</dict>
 	<dict>
 		<key>url</key>
@@ -60,7 +60,7 @@
 		<key>name</key>
 		<string>Часть 6</string>
 		<key>id</key>
-		<string>6</string>
+		<integer>6</integer>
 	</dict>
 	<dict>
 		<key>url</key>
@@ -70,7 +70,7 @@
 		<key>name</key>
 		<string>Часть 7</string>
 		<key>id</key>
-		<string>7</string>
+		<integer>7</integer>
 	</dict>
 	<dict>
 		<key>url</key>
@@ -80,7 +80,7 @@
 		<key>name</key>
 		<string>Часть 8</string>
 		<key>id</key>
-		<string>8</string>
+		<integer>8</integer>
 	</dict>
 	<dict>
 		<key>url</key>
@@ -90,7 +90,7 @@
 		<key>name</key>
 		<string>Часть 9</string>
 		<key>id</key>
-		<string>9</string>
+		<integer>9</integer>
 	</dict>
 	<dict>
 		<key>url</key>
@@ -100,7 +100,7 @@
 		<key>name</key>
 		<string>Часть 10</string>
 		<key>id</key>
-		<string>10</string>
+		<integer>10</integer>
 	</dict>
 </array>
 </plist>

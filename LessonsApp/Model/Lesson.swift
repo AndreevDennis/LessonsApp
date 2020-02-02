@@ -9,15 +9,18 @@
 import UIKit
 
 
-var lessons : [Lesson] = {
-    let array = NSArray(contentsOfFile: Bundle.main.path(forResource: "Model.list", ofType: "plist")!)!
+var lessons:[Lesson] = []
+
+func loadLessons() {
     var returnArray:[Lesson] = []
+    
+    let array = NSArray(contentsOfFile: Bundle.main.path(forResource: "Model", ofType: "plist")!)!
     for lesDictionary in array {
         let lesson = Lesson(dictionary: lesDictionary as! NSDictionary)
         returnArray.append(lesson)
     }
-   return returnArray
-}()
+    lessons = returnArray
+}
 
 class Lesson: NSObject {
     var id: Int
