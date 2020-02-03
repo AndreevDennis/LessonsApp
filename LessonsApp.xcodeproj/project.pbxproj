@@ -19,6 +19,8 @@
 		C2555B3823E72EF100AEE1DE /* LessonsListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2555B3723E72EF100AEE1DE /* LessonsListCell.swift */; };
 		C2555B3A23E7301E00AEE1DE /* swift.png in Resources */ = {isa = PBXBuildFile; fileRef = C2555B3923E7301E00AEE1DE /* swift.png */; };
 		C2DFAEC823E78502003BD626 /* ShareManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2DFAEC723E78502003BD626 /* ShareManager.swift */; };
+		C2DFAECA23E78BF6003BD626 /* AboutController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2DFAEC923E78BF6003BD626 /* AboutController.swift */; };
+		C2DFAECE23E8A5AE003BD626 /* StoreManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2DFAECD23E8A5AE003BD626 /* StoreManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +38,8 @@
 		C2555B3723E72EF100AEE1DE /* LessonsListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessonsListCell.swift; sourceTree = "<group>"; };
 		C2555B3923E7301E00AEE1DE /* swift.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = swift.png; sourceTree = "<group>"; };
 		C2DFAEC723E78502003BD626 /* ShareManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareManager.swift; sourceTree = "<group>"; };
+		C2DFAEC923E78BF6003BD626 /* AboutController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutController.swift; sourceTree = "<group>"; };
+		C2DFAECD23E8A5AE003BD626 /* StoreManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +100,7 @@
 				C2555B3323E72DBE00AEE1DE /* LessonController.swift */,
 				C2555B3723E72EF100AEE1DE /* LessonsListCell.swift */,
 				C2555B3523E72DF600AEE1DE /* LessonsListControllers.swift */,
+				C2DFAEC923E78BF6003BD626 /* AboutController.swift */,
 			);
 			path = Controlles;
 			sourceTree = "<group>";
@@ -104,6 +109,7 @@
 			isa = PBXGroup;
 			children = (
 				C2DFAEC723E78502003BD626 /* ShareManager.swift */,
+				C2DFAECD23E8A5AE003BD626 /* StoreManager.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -196,7 +202,9 @@
 				C2555B3423E72DBE00AEE1DE /* LessonController.swift in Sources */,
 				C2555B1823E7217500AEE1DE /* AppDelegate.swift in Sources */,
 				C2555B1A23E7217500AEE1DE /* SceneDelegate.swift in Sources */,
+				C2DFAECE23E8A5AE003BD626 /* StoreManager.swift in Sources */,
 				C2555B3823E72EF100AEE1DE /* LessonsListCell.swift in Sources */,
+				C2DFAECA23E78BF6003BD626 /* AboutController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -21,6 +21,12 @@ class ShareManager: NSObject {
         mailController.setMessageBody(text, isHTML: false)
         vc.present(mailController, animated: true, completion: nil)
     }
+    
+    var activityViewController: UIActivityViewController?
+    func share(objects:[AnyObject],showInController:UIViewController){
+        activityViewController = UIActivityViewController(activityItems: objects, applicationActivities: nil)
+        showInController.present(activityViewController!, animated: true, completion: nil)
+    }
 }
 
 
